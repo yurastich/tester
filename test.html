@@ -15,3 +15,5 @@ TRIMMED=$(echo $BRANCH_NAME | sed -e 's:^\([^-]*-[^-]*\)-.*:\1:' -e \
 if [ -n "$BRANCH_NAME" ] &&  ! [[ $BRANCH_EXCLUDED -eq 1 ]]; then
 sed -i.bak -e "1s/^/$TRIMMED: \n/" $1
 fi
+
+
