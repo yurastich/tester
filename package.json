@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,16 @@
   "bugs": {
     "url": "https://github.com/yurastich/tester/issues"
   },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "./tools/git-commit-message.sh"
+    }
+  },
   "homepage": "https://github.com/yurastich/tester#readme",
   "dependencies": {
     "shared-git-hooks": "^1.2.1"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0"
   }
 }
