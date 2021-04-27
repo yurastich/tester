@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
+  "scripts": {
+    "prepare": "jira-prepare-commit-msg"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yurastich/tester.git"
@@ -12,6 +14,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yurastich/tester/issues"
+  },
+  "jira-prepare-commit-msg": {
+    "messagePattern": "$J: $M"
   },
   "husky": {
     "hooks": {
