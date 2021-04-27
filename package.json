@@ -16,11 +16,8 @@
     "url": "https://github.com/yurastich/tester/issues"
   },
   "jira-prepare-commit-msg": {
-    "messagePattern": "[$J]\n$M",
-    "jiraTicketPattern": "([A-Z]+-\\d+)",
-    "commentChar": "#",
-    "isConventionalCommit": false,
-    "allowEmptyCommitMessage": false
+    "messagePattern": "[$J] $M",
+    "isConventionalCommit": true
   },
   "husky": {
     "hooks": {
@@ -29,10 +26,10 @@
   },
   "homepage": "https://github.com/yurastich/tester#readme",
   "dependencies": {
-    "jira-prepare-commit-msg": "^1.5.2",
     "shared-git-hooks": "^1.2.1"
   },
   "devDependencies": {
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "jira-prepare-commit-msg": "^1.5.2"
   }
 }
