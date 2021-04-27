@@ -20,17 +20,10 @@
   },
   "husky": {
     "hooks": {
-
-      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
-      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
-      "post-applypatch": "echo \"[Husky] post-applypatch\"",
-      "pre-commit": "echo \"[Husky] pre-commit\""
+      "prepare-commit-msg": "jira-prepare-commit-msg"
     }
   },
   "homepage": "https://github.com/yurastich/tester#readme",
-  "dependencies": {
-    "shared-git-hooks": "^1.2.1"
-  },
   "devDependencies": {
     "husky": "^5.2.0",
     "jira-prepare-commit-msg": "^1.5.2"
