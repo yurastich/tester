@@ -16,7 +16,6 @@
     "url": "https://github.com/yurastich/tester/issues"
   },
   "jira-prepare-commit-msg": {
-    "messagePattern": "[$J] $M",
     "isConventionalCommit": true
   },
   "husky": {
