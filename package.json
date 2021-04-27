@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "jira-prepare-commit-msg"
   },
   "repository": {
     "type": "git",
@@ -15,13 +15,21 @@
   "bugs": {
     "url": "https://github.com/yurastich/tester/issues"
   },
+  "jira-prepare-commit-msg": {
+    "messagePattern": "[$J]\n$M",
+    "jiraTicketPattern": "([A-Z]+-\\d+)",
+    "commentChar": "#",
+    "isConventionalCommit": false,
+    "allowEmptyCommitMessage": false
+  },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "./tools/git-commit-message.sh"
+      "prepare-commit-msg": "jira-prepare-commit-msg"
     }
   },
   "homepage": "https://github.com/yurastich/tester#readme",
   "dependencies": {
+    "jira-prepare-commit-msg": "^1.5.2",
     "shared-git-hooks": "^1.2.1"
   },
   "devDependencies": {
