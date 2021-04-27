@@ -15,9 +15,9 @@
   "bugs": {
     "url": "https://github.com/yurastich/tester/issues"
   },
-  "jira-prepare-commit-msg": {
-    "messagePattern": "$J: $M"
-  },
+//  "jira-prepare-commit-msg": {
+//    "messagePattern": "$J: $M"
+//  },
   "husky": {
     "hooks": {
 
