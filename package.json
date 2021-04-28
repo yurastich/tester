@@ -1,16 +1,7 @@
 {
-  "name": "tester",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yurastich/tester.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yurastich/tester/issues"
   },
   "jira-prepare-commit-msg": {
     "messagePattern": "$J: $M"
@@ -20,7 +11,6 @@
       "prepare-commit-msg": "jira-prepare-commit-msg"
     }
   },
-  "homepage": "https://github.com/yurastich/tester#readme",
   "devDependencies": {
     "husky": "^4.3.8",
     "jira-prepare-commit-msg": "^1.5.2"
